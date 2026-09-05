@@ -128,7 +128,7 @@ app.get('/api/admin/overview', (req, res) => {
 });
 
 // Database connection & Auto-seed
-mongoose.connect(MONGODB_URI, { serverSelectionTimeoutMS: 3000 })
+mongoose.connect(MONGODB_URI, { serverSelectionTimeoutMS: 10000 })
   .then(async () => {
     console.log('✅ Connected to MongoDB: civicconnect');
     await seedDatabase();
