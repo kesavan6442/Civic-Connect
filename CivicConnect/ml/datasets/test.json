@@ -1,0 +1,20 @@
+[
+  {
+    "text": "Severe potholes on Main Road causing two-wheeler accidents and traffic congestion",
+    "category": "Roads & Infrastructure",
+    "severity": "HIGH",
+    "priority": "HIGH"
+  },
+  {
+    "text": "Broken culvert and caved-in road near Kanke school creating severe hazard for children",
+    "category": "Roads & Infrastructure",
+    "severity": "CRITICAL",
+    "priority": "CRITICAL"
+  },
+  {
+    "text": "Canal irrigation gate broken resulting in crop water shortage in Kanke village",
+    "category": "Agriculture",
+    "severity": "HIGH",
+    "priority": "HIGH"
+  }
+]

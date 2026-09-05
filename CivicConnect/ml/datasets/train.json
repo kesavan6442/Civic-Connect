@@ -1,0 +1,56 @@
+[
+  {
+    "text": "High voltage transformer sparking and loose live wires hanging near footpath",
+    "category": "Electricity & Streetlights",
+    "severity": "CRITICAL",
+    "priority": "CRITICAL"
+  },
+  {
+    "text": "Streetlights not functioning for 1km stretch on bypass road leading to night accidents",
+    "category": "Electricity & Streetlights",
+    "severity": "HIGH",
+    "priority": "HIGH"
+  },
+  {
+    "text": "Major drinking water pipeline fracture in Sakchi Market wasting thousands of liters daily",
+    "category": "Water Management",
+    "severity": "HIGH",
+    "priority": "HIGH"
+  },
+  {
+    "text": "Government school building roof leaking during monsoon disrupting classes",
+    "category": "Education",
+    "severity": "MEDIUM",
+    "priority": "MEDIUM"
+  },
+  {
+    "text": "Wheelchair ramp missing at district collectorate office preventing access for disabled citizens",
+    "category": "Accessibility",
+    "severity": "MEDIUM",
+    "priority": "MEDIUM"
+  },
+  {
+    "text": "Commercial waste dumped on roadside not collected for past two weeks",
+    "category": "Sanitation",
+    "severity": "MEDIUM",
+    "priority": "MEDIUM"
+  },
+  {
+    "text": "Industrial particulate smoke emission exceeding safety threshold near residential area",
+    "category": "Environment",
+    "severity": "HIGH",
+    "priority": "HIGH"
+  },
+  {
+    "text": "Primary Health Centre running out of essential anti-venom and emergency medicines",
+    "category": "Healthcare",
+    "severity": "CRITICAL",
+    "priority": "CRITICAL"
+  },
+  {
+    "text": "Open drainage overflow and sewage accumulation in residential colony creating health risk",
+    "category": "Water Management",
+    "severity": "HIGH",
+    "priority": "HIGH"
+  }
+]

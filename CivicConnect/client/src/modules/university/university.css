@@ -1,0 +1,844 @@
+/* ==========================================================================
+   University Module Styles - Government of Jharkhand Civic Connect
+   Color Palette: #036D33, #024D24, #E8F5EC, #C62828, #FFFFFF, #1F2937
+   ========================================================================== */
+
+.univ-auth-wrapper {
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 36px 20px;
+  background: radial-gradient(circle at 10% 20%, rgba(3, 109, 51, 0.07) 0%, transparent 40%),
+              radial-gradient(circle at 90% 80%, rgba(2, 77, 36, 0.08) 0%, transparent 45%),
+              #E8F5EC;
+}
+
+.univ-auth-card {
+  background: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0 16px 40px rgba(2, 77, 36, 0.12);
+  border: 1.5px solid rgba(3, 109, 51, 0.15);
+  width: 100%;
+  max-width: 520px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.univ-auth-card.signup-mode {
+  max-width: 900px;
+}
+
+.univ-auth-header {
+  background: linear-gradient(135deg, #024D24 0%, #036D33 100%);
+  color: #FFFFFF;
+  padding: 26px 30px;
+  position: relative;
+  text-align: center;
+}
+
+.univ-auth-emblem {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.14);
+  padding: 4px 14px;
+  border-radius: 9999px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.univ-auth-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 4px;
+}
+
+.univ-auth-subtitle {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.4;
+}
+
+.univ-auth-body {
+  padding: 32px 30px;
+}
+
+@media (max-width: 640px) {
+  .univ-auth-body {
+    padding: 22px 18px;
+  }
+}
+
+/* Form Elements */
+.univ-form-group {
+  margin-bottom: 20px;
+}
+
+.univ-form-label {
+  display: block;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: #1F2937;
+  margin-bottom: 7px;
+}
+
+.univ-form-label .required {
+  color: #C62828;
+  margin-left: 2px;
+}
+
+.univ-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.univ-form-input,
+.univ-form-select {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 0.92rem;
+  font-family: inherit;
+  color: #1F2937;
+  background: #FFFFFF;
+  border: 1.5px solid #D1D5DB;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+.univ-form-input:focus,
+.univ-form-select:focus {
+  outline: none;
+  border-color: #036D33;
+  box-shadow: 0 0 0 3px rgba(3, 109, 51, 0.15);
+}
+
+.univ-form-input::placeholder {
+  color: #9CA3AF;
+}
+
+.univ-input-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 640px) {
+  .univ-input-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Links and actions */
+.univ-auth-meta-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.univ-forgot-link {
+  color: #C62828;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.2s ease;
+}
+
+.univ-forgot-link:hover {
+  text-decoration: underline;
+  opacity: 0.85;
+}
+
+.univ-btn-primary {
+  width: 100%;
+  padding: 13px 20px;
+  background: #036D33;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(3, 109, 51, 0.2);
+}
+
+.univ-btn-primary:hover {
+  background: #024D24;
+  box-shadow: 0 6px 16px rgba(2, 77, 36, 0.28);
+}
+
+.univ-toggle-row {
+  text-align: center;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #E5E7EB;
+  font-size: 0.9rem;
+  color: #4B5563;
+}
+
+.univ-toggle-btn {
+  background: none;
+  border: none;
+  color: #036D33;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 6px;
+  text-decoration: none;
+}
+
+.univ-toggle-btn:hover {
+  text-decoration: underline;
+  color: #024D24;
+}
+
+/* Section Dividers for Signup */
+.signup-section-divider {
+  margin: 30px 0 18px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #E8F5EC;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.signup-section-heading {
+  font-size: 1.12rem;
+  font-weight: 800;
+  color: #024D24;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.signup-badge-count {
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: #E8F5EC;
+  color: #036D33;
+  padding: 2px 8px;
+  border-radius: 9999px;
+}
+
+/* Area of Expertise Checkbox Grid */
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .expertise-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .expertise-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.checkbox-pill-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #FAFCFA;
+  border: 1.5px solid #E5E7EB;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.checkbox-pill-card:hover {
+  border-color: #036D33;
+  background: #F4FAF6;
+}
+
+.checkbox-pill-card.checked {
+  border-color: #036D33;
+  background: #E8F5EC;
+  color: #024D24;
+  font-weight: 600;
+}
+
+.checkbox-pill-card input[type="checkbox"] {
+  accent-color: #036D33;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+
+.checkbox-pill-card span {
+  font-size: 0.85rem;
+}
+
+/* University Capabilities Categorized Sections */
+.capabilities-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.capability-category-box {
+  background: #FAFCFA;
+  border: 1.5px solid rgba(3, 109, 51, 0.14);
+  border-radius: 12px;
+  padding: 16px;
+  transition: border-color 0.2s ease;
+}
+
+.capability-category-box:hover {
+  border-color: #036D33;
+}
+
+.capability-category-header {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #036D33;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px dashed rgba(3, 109, 51, 0.15);
+  padding-bottom: 6px;
+}
+
+.capability-items-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+}
+
+@media (max-width: 640px) {
+  .capability-items-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.capability-check-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.capability-check-item:hover {
+  background: #E8F5EC;
+}
+
+.capability-check-item input[type="checkbox"] {
+  accent-color: #036D33;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.capability-check-item span {
+  font-size: 0.84rem;
+  color: #1F2937;
+}
+
+/* ==========================================================================
+   University Dashboard Styles
+   ========================================================================== */
+
+.univ-dashboard-wrapper {
+  background-color: #E8F5EC;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.univ-navbar {
+  background: #FFFFFF;
+  border-bottom: 2.5px solid #036D33;
+  box-shadow: 0 2px 8px rgba(3, 109, 51, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 90;
+}
+
+.univ-navbar-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.univ-brand-group {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.univ-portal-badge {
+  background: #036D33;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.univ-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.univ-nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1.5px solid transparent;
+}
+
+.univ-btn-logout {
+  background: #FFF1F1;
+  color: #C62828;
+  border-color: rgba(198, 40, 40, 0.2);
+}
+
+.univ-btn-logout:hover {
+  background: #C62828;
+  color: #FFFFFF;
+}
+
+.univ-btn-backhome {
+  background: #E8F5EC;
+  color: #024D24;
+  border-color: rgba(3, 109, 51, 0.2);
+}
+
+.univ-btn-backhome:hover {
+  background: #036D33;
+  color: #FFFFFF;
+}
+
+/* Dashboard Content Area */
+.univ-content-container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 24px 60px;
+  flex: 1;
+}
+
+.univ-welcome-banner {
+  background: linear-gradient(135deg, #024D24 0%, #036D33 100%);
+  color: #FFFFFF;
+  border-radius: 18px;
+  padding: 28px 32px;
+  margin-bottom: 32px;
+  box-shadow: 0 10px 28px rgba(2, 77, 36, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.univ-welcome-banner::after {
+  content: '';
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.univ-welcome-title {
+  font-size: 1.7rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+}
+
+.univ-welcome-meta {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.univ-welcome-tag {
+  background: rgba(255, 255, 255, 0.18);
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* SECTION HEADER */
+.univ-dashboard-heading {
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.univ-heading-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #024D24;
+  letter-spacing: -0.3px;
+}
+
+.univ-heading-sub {
+  font-size: 0.86rem;
+  color: #4B5563;
+}
+
+/* ==========================================================================
+   THE SIX PROBLEM CARDS GRID
+   Specification:
+   - Medium & Large devices: Exactly 2 cards per row (repeat(2, 1fr))
+   - Mobile devices: Single card per row (1fr)
+   ========================================================================== */
+
+.problems-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 cards in medium and large devices */
+  gap: 22px;
+}
+
+@media (max-width: 768px) {
+  .problems-cards-grid {
+    grid-template-columns: 1fr; /* Single card in mobile */
+    gap: 16px;
+  }
+}
+
+/* Individual Problem Card */
+.problem-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  border: 1.5px solid rgba(2, 77, 36, 0.12);
+  padding: 24px 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 16px rgba(2, 77, 36, 0.06);
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.problem-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 6px;
+  background: var(--card-border-color, #036D33);
+}
+
+.problem-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(2, 77, 36, 0.12);
+  border-color: #036D33;
+}
+
+.problem-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.problem-card-label {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #4B5563;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.problem-card-title-hi {
+  font-size: 0.8rem;
+  color: #036D33;
+  font-weight: 600;
+}
+
+/* Big prominent Count */
+.problem-card-count {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #1F2937;
+  letter-spacing: -1px;
+  line-height: 1;
+  margin-top: 6px;
+}
+
+.problem-card-icon-wrapper {
+  width: 62px;
+  height: 62px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--icon-bg, #E8F5EC);
+  color: var(--icon-color, #036D33);
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.problem-card:hover .problem-card-icon-wrapper {
+  transform: scale(1.1);
+}
+
+/* Card Theme Accents */
+.card-total-problems {
+  --card-border-color: #024D24;
+  --icon-bg: #E8F5EC;
+  --icon-color: #024D24;
+}
+
+.card-new-problems {
+  --card-border-color: #036D33;
+  --icon-bg: #E8F5EC;
+  --icon-color: #036D33;
+}
+
+.card-currently-working {
+  --card-border-color: #1E40AF;
+  --icon-bg: #EFF6FF;
+  --icon-color: #1E40AF;
+}
+
+.card-submitted-problems {
+  --card-border-color: #D97706;
+  --icon-bg: #FEF3C7;
+  --icon-color: #D97706;
+}
+
+.card-funding-approved {
+  --card-border-color: #059669;
+  --icon-bg: #ECFDF5;
+  --icon-color: #059669;
+}
+
+.card-submitted-to-government {
+  --card-border-color: #C62828;
+  --icon-bg: #FFF1F1;
+  --icon-color: #C62828;
+}
+
+/* ==========================================================================
+   AI Matched Civic Challenge Cards (Polished, Neat & Attractive)
+   ========================================================================== */
+
+.univ-challenge-card {
+  background: #FFFFFF;
+  border: 1.5px solid rgba(3, 109, 51, 0.14);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-shadow: 0 4px 16px rgba(2, 77, 36, 0.05);
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.univ-challenge-card:hover {
+  transform: translateY(-5px);
+  border-color: #036D33;
+  box-shadow: 0 14px 32px rgba(3, 109, 51, 0.14);
+}
+
+.univ-id-badge {
+  background: #F3F4F6;
+  color: #4B5563;
+  font-weight: 700;
+  font-size: 0.74rem;
+  padding: 3px 9px;
+  border-radius: 6px;
+  font-family: monospace;
+  border: 1px solid #E5E7EB;
+  display: inline-flex;
+  align-items: center;
+}
+
+.univ-category-chip {
+  background: #E8F5EC;
+  color: #024D24;
+  font-weight: 700;
+  font-size: 0.74rem;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  border: 1px solid rgba(3, 109, 51, 0.22);
+  display: inline-flex;
+  align-items: center;
+}
+
+.univ-match-score-badge {
+  background: linear-gradient(135deg, #036D33 0%, #024D24 100%);
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 0.82rem;
+  padding: 5px 13px;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(3, 109, 51, 0.25);
+  letter-spacing: 0.3px;
+}
+
+.univ-card-title {
+  font-size: 1.08rem;
+  font-weight: 800;
+  color: #111827;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  line-height: 1.4;
+  transition: color 0.15s ease;
+}
+
+.univ-card-title:hover {
+  color: #036D33;
+}
+
+.univ-card-desc {
+  font-size: 0.86rem;
+  color: #4B5563;
+  line-height: 1.55;
+  margin-bottom: 14px;
+}
+
+.univ-meta-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.univ-meta-item {
+  display: inline-flex;
+  align-items: center;
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.76rem;
+  color: #374151;
+}
+
+.univ-meta-item.dept {
+  background: #F0FDF4;
+  border-color: #BBF7D0;
+  color: #15803D;
+  font-weight: 600;
+}
+
+.univ-reasons-box {
+  background: linear-gradient(180deg, #F4FAF6 0%, #EBF6EF 100%);
+  border: 1px solid rgba(3, 109, 51, 0.18);
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 16px;
+}
+
+.univ-reasons-header {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #024D24;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.univ-reasons-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.univ-reasons-list li {
+  display: flex;
+  align-items: flex-start;
+  font-size: 0.77rem;
+  color: #374151;
+  line-height: 1.4;
+}
+
+.univ-btn-secondary {
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.80rem;
+  padding: 7px 14px;
+  border-color: #D1D5DB;
+  color: #4B5563;
+  transition: all 0.2s ease;
+}
+
+.univ-btn-secondary:hover {
+  background: #F3F4F6;
+  border-color: #9CA3AF;
+  color: #111827;
+}
+
+.univ-btn-accept {
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.80rem;
+  padding: 7px 18px;
+  background: #036D33;
+  border: none;
+  color: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(3, 109, 51, 0.2);
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.univ-btn-accept:hover {
+  background: #024D24;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(2, 77, 36, 0.3);
+  color: #FFFFFF;
+}
